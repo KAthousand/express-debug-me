@@ -40,7 +40,7 @@ app.get("/users", (req, res) => {
   res.json(users);
 });
 
-app.get("/user/:id", (req, res) => {
+app.get("/users/:id", (req, res) => {
   const id = req.params.id;
   const user = users.filter((user) => user.id === id)[0];
   res.json(user);
